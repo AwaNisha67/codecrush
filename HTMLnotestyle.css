@@ -1,0 +1,163 @@
+/*IMportant*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
+*{  
+	margin: 0;
+	padding: 0;
+	
+}
+::-webkit-scrollbar{
+	width: 20px;
+}
+.html-head{
+	
+   background: #FFD68A;
+}
+.html-logo{
+	margin: auto;
+	width: max-content;
+	height: 50px auto;
+}
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+nav{
+
+    top: 10px;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	position: sticky;
+	border-radius: 10px;
+
+}
+.items ul {
+	list-style-type: none;
+	float: right;
+    margin: 20px;
+}
+.items ul li{
+	display: inline-block;
+}
+.items ul li a{
+	background: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 20px;
+	color: black;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+.items ul li a:hover{
+	transition: 0.3s ease;
+	color: orangered;
+}
+.logo img{
+	background: white;
+	float: left;
+	border-radius: 20px;
+	padding: 10px;
+	width: 15%;
+	height: 20%;
+}
+.logo img:hover{
+	cursor: pointer;
+    transition: 0.3s ;
+	box-shadow: 5px 5px 5px orangered;
+}
+
+
+.badasidebar{
+	position: sticky;
+}
+.sidebar{
+
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	width: 230px;
+	height: 100%;
+	background: whitesmoke;
+}
+.sidebar h2{
+	border-radius: 10px;
+	font-size: 22px;
+	color: orangered;
+	text-align: center;
+	line-height: 70px;
+	background: white;
+	user-select: none;
+}
+.sidebar ul a{
+	border-radius: 10px;
+	background: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: black;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255.1);
+	border-bottom: 1px solid black;
+}
+
+.sidebar ul a:hover{
+	background: #FFD68A;
+}
+.notes{
+	position: relative;
+    left: 260px;
+    width: 110vh;
+}
+.notes h1{
+	position: relative;
+
+	font-size: 70px;
+}
+.notes h3{
+	
+	position: relative;
+}
+.layoutimg{
+	width: 50vh ;
+	height: 50vh;
+	position: relative;
+}
+.layouteg{
+	padding-left: 50px;
+	width: 50vh;
+	height: 50vh auto;
+	position: relative;
+}
+.table-bordered{
+	background-color: #eee;
+	border: 1px solid gray;
+}
+.table-bordered th{
+	border: 1px solid gray;
+}
+.table-bordered td{
+}
+content{
+	line-height: 45px;
+}
+content h2:hover{
+	color:orangered ;
+	transition: 0.3s ease;
+}
+
+img .headoftable{
+	width: 20px ;
+	height: auto;
+}
+button{
+	list-style-type: none;
+    width: 100px;
+    color: orangered;
+    
+}

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn HTML</title>
+	<link rel="stylesheet" type="text/css" href="HTMLnotestyle.css">
+</head>
+<body>
+    
+	 <header>
+    <nav>
+        <div class="main">
+            <div class="logo">
+                <img src="codecrush-logo.png">
+            </div>
+            <div class="items">
+                <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">E-learning</a></li>
+                <li><a href="#">Video tutorials</a></li>
+                <li><a href="codeEditor.html" >Code-Editor</a></li>
+               
+                </ul>
+            </div>
+        </div>
+        </nav>
+        </header> 
+        <div class="html-head">
+        	<div class="html-logo">
+        		<img src="html.png">
+        	</div>
+        	<div class="html-heading">
+        		
+        	</div>
+        </div>
+   
+    <section class="content-block">
+        <div class="badasidebar">
+    	<div class="sidebar">
+    	        <h2 class="content">Page Index</h2>
+    	        <ul class="pageindex">
+                   <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#layouts">Layouts</a></li>
+                   <li><a href="#HTML-Elements">Elements</a></li>
+                   <li><a href="#html-attributes">Attributes</a></li>
+                    <li><a href="#headings" >Headings</a></li>
+                    <li><a href="#Tables">Tables</a></li>
+                    <li><a href="#html-forms">Forms</a></li>
+                    <li><a href="#html-frames">Frameset</a></li>
+                   
+                </ul>
+        </div>
+    </section>
+<content class="HTMLcontent">
+    <section class="notes">
+    	<div id="introduction">
+    		<h3>Introduction to HTML</h3>
+    		<hr>
+    		<p class="intro">HTML is the standard markup language for creating Web pages</p>
+    		<hr>
+    		<h2>What is HTML?</h2>
+    		<ul>
+    			<li>
+    				HTML stands for Hyper Text Markup Language
+    			</li>
+    			<li>
+    				HTML is the standard markup language for creating Web pages
+    			</li>
+    			<li>
+    				HTML describes the structure of a Web page
+    			</li>
+    			<li>
+    				HTML consists of a series of elements
+    			</li>
+    			<li>
+    				HTML elements tell the browser how to display the content
+    			</li>
+    			<li>
+    				HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+    			</li>
+    		</ul>
+    		<hr>
+    		<h2>Features of HTML5</h2>
+    		<p>HTML stands for Hypertext Markup Language, and it is the standard markup language for creating web pages and web applications. HTML5 is the 5th version of HTML. With invent of features in HTML5, it’s not only possible to create better websites, but we can also create dynamic websites</p><br>
+    		<p>HTML5 introduces a number of new elements and attributes that can help you in building modern websites. Here is a set of some of the most prominent features introduced in HTML5.</p>
+    		<ol type="1">
+    			<li>
+    				<b>New Semantic Elements</b> − These are like &lt;header&gt; , &lt;footer&gt; , and &lt;section&gt;
+    			</li>
+    			<li>Forms 2.0 − Improvements to HTML web forms where new attributes have been introduced for &lt;input&gt; tag.</li>
+    		    <li>Persistent Local Storage − To achieve without resorting to third-party plugins</li>
+    		    <li>Audio & Video − You can embed audio or video on your webpages without resorting to third-party plugins.</li>
+    		    <li>Geolocation − Now visitors can choose to share their physical location with your web application.</li>
+    		    <li>Drag and drop − Drag and drop the items from one location to another location on the same webpage.</li>
+    		    <li>Microdata − This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.</li>
+
+    		</ol>
+    		<hr>
+    		<h2>Elements and Tags</h2>
+    		<p>HTML uses predefined tags and elements which tell the browser how to properly display the content. Remember to include closing tags. If omitted, the browser applies the effect of the opening tag until the end of the page.</p>
+    	    	<hr>
+    	<h2>HTML page structure</h2>
+    	<p>The basic structure of an HTML page is laid out below. It contains the essential building-block elements (i.e. doctype declaration, HTML, head, title, and body elements) upon which all web pages are created.</p>
+    	<img src="layout.png" width="350px" height="350px auto">
+    	<p>
+    		&lt;!DOCTYPE html&gt;: This is the document type declaration (not technically a tag). It declares a document as being an HTML document. The doctype declaration is not case-sensitive.<br>
+
+&lt;html&gt;: This is called the HTML root element. All other elements are contained within it.<br><br>
+
+&lt;head&gt;: The head tag contains the “behind the scenes” elements for a webpage. Elements within the head aren’t visible on the front-end of a webpage. HTML elements used inside the &lt;head&gt; element include: <br><br>
+     <ul style="list-style-type: decimal;">
+     	<li>&lt;style&gt;-This html tag allows us to insert styling into our webpages and make them appealing to look at with the help of CSS.</li>
+     	<li>&lt;title&gt;-The title is what is displayed on the top of your browser when you visit a website and contains title of the webpage that you are viewing.</li>
+     	<li>&lt;script&gt;-This tag is used to add functionality in the website with the help of JavaScript.</li>
+     	<li>&lt;link&gt;– The ‘link’ tag is used to tie together HTML, CSS and JavaScript. It is self closing.</li>
+
+     </ul>
+</p>
+</div>
+<!-- HTML LAYOUTS -->
+<div id="layouts">
+
+	<hr>
+    <h2>HTML Layouts</h2>
+    <hr>
+    <p>Page layout is the part of graphic design that deals with the arrangement of visual elements on a page. Page layout is used to make the web pages look better. It establishes the overall appearance, relative importance, and relationships between the graphic elements to achieve a smooth flow of information and eye movement for maximum effectiveness or impact.</p><br>
+    <img src="html-layouts.png" class="layoutimg">
+    <p>HTML has several semantic elements that define the different parts of a web page:</p>
+    <ul>
+    	<li>header:This defines a header for a web page</li>
+    	<li>Navigation menu: This defines a container for navigation links</li>
+    	<li>Section: This defines a section in a web page</li>
+    	<li>Aside area: The &lt;aside&gt; content is often placed as a sidebar in a document</li>
+        <li>Article: This is the primary element that contains information about the web page</li>
+    	<li>footer: This defines a footer for a document or a section</li>
+    </ul>
+    <hr>
+
+    <h2>HTML Layout Coding Examples</h2>
+    <hr>
+    <p>Let’s understand the layout of an HTML web page using an example.</p>
+    
+    <ol type="1">
+        <li>HTML Layouts using Tables.
+        <p>The simplest and most popular way of creating layouts is using HTML &lt;table&gt; tag. These tables are arranged in columns and rows, so you can utilize these rows and columns in whatever way you like.</p> 
+        </li>
+        <br><b>For example</b><p>:-the following HTML layout example is achieved using a table with 3 rows and 2 columns but the header and footer column spans both columns using the colspan attribute −</p>
+        <br>
+     <code>
+         &lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+
+<br>   &lt;head&gt;
+<br>      &lt;title&gt;HTML Layouts using DIV, SPAN&lt;/title&gt;
+ <br>  &lt;/head&gt;
+
+ <br>  &lt;body&gt;
+     
+     <br>
+      &lt;div style = "width:100%"&gt;
+        
+     <br>    &lt;div style = "background-color:#b5dcb3; width:100%"&gt;
+         <br>   &lt;h1&gt;This is Web Page Main title&lt;/h1&gt;
+     <br>    &lt;/div&gt;
+            
+         <br>&lt;div style = "background-color:#aaa; height:200px; width:100px; float:left;"&gt;
+            <br>&lt;div&gt;&lt;b&gt;Main Menu&lt;/b&gt;&lt;/div&gt;
+           <br> HTML&lt;br /&gt;
+           <br> CSS&lt;br /&gt;
+           <br> JS
+         <br>&lt;/div&gt;
+            
+        <br> &lt;div style = "background-color:#eee; height:200px; width:350px; float:left;" &gt;
+            <br>&lt;p&gt;Technical and Managerial Tutorials&lt;/p&gt;
+       <br>  &lt;/div&gt;
+        
+        <br> &lt;div style = "background-color:#aaa; height:200px; width:100px; float:right;"&gt;
+            <br>&lt;div&gt;&lt;b&gt;Right Menu&lt;/b&gt;&lt;/div&gt;
+            <br>HTML&lt;br /&gt;
+            <br>CSS&lt;br /&gt;
+            <br>JS
+       <br>  &lt;/div&gt;
+            
+        <br> &lt;div style = "background-color:#b5dcb3; clear:both"&gt;
+            <br>&lt;center&gt;
+            <br>   Copyright &copy; 2007 codecrush.com
+            <br>&lt;/center&gt;
+         <br>&lt;/div&gt;
+            
+      <br>&lt;/div&gt;
+   <br>&lt;/body&gt;
+<br>
+&lt;/html&gt;
+     </code><br>
+     <h2>the output will be:-</h2>
+    <button ><a href="layouts-using-tables.html">SEE THE RESULT</a></button>
+    <br><hr><br>
+    <li>HTML layout:- using DIV and SPAN</li>
+    <b>Div element:- </b><p> The &lt;div&gt; element is a block level element used for grouping HTML elements. While the &lt;div&gt; tag is a block-level element.<br>
+
+    <b>SPAN element:-</b><p> the HTML &lt;span&gt; element is used for grouping elements at an inline level.</p>
+    <br>S
+    <code>
+        &lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+
+  <br> &lt;head&gt;
+      &lt;title&gt;HTML Layouts using DIV, SPAN&lt;/title&gt;
+  <br> &lt;/head&gt;
+
+  <br> &lt;body&gt;
+      &lt;div style = "width:100%"&gt;
+        
+         &lt;div style = "background-color:#b5dcb3; width:100%"&gt;
+  <br>  <br>        &lt;h1&gt;This is Web Page Main title&lt;/h1&gt;
+   <br>      &lt;/div&gt;
+            
+    <br>     &lt;div style = "background-color:#aaa; height:200px; <br>width:100px; float:left;"&gt;
+     <br>       &lt;div&gt;&lt;b&gt;Main Menu&lt;/b&gt;&lt;/div&gt;
+            HTML&lt;br /&gt;
+      <br>      CSS&lt;br /&gt;
+      <br>      JS
+       <br>  &lt;/div&gt;
+            
+       <br>  &lt;div style = "background-color:#eee; height:200px; <br>width:350px; float:left;" &gt;
+        <br>    &lt;p&gt;Technical and Managerial Tutorials&lt;/p&gt;
+        <br> &lt;/div&gt;
+        
+         <br>&lt;div style = "background-color:#aaa; height:200px; width:100px; float:right;"&gt;
+        <br>    &lt;div&gt;&lt;b&gt;Right Menu&lt;/b&gt;&lt;/div&gt;
+         <br>   HTML&lt;br /&gt;
+        <br>    JS..
+        <br> &lt;/div&gt;
+            
+         <br>&lt;div style = "background-color:#b5dcb3; clear:both"&gt;
+         <br>   &lt;center&gt;
+               Copyright &copy; 2007 codecrush.com
+         <br>   &lt;/center&gt;
+         <br>&lt;/div&gt;
+            
+      &lt;/div&gt;
+   &lt;/body&gt;
+
+&lt;/html&gt;
+<h4>This will produce the following result −</h4>
+<button><a href="layouts-using-div.html">SEE The Output</a></button>
+    </code>
+    </ol>
+    </div>
+    <!-- HTML ELEMENTS -->
+<div id="HTML-Elements">
+   
+    <hr>
+    <h2>HTML Tags</h2>
+    <hr>
+
+<p>HTML is a markup language, which means that it is written with codes readable by a person without it needing to be compiled first. In other words, the text on a web page is “marked up” with these codes to give the web browser instructions about how to display the text.<br>
+    <br>
+
+When you write HTML, you are writing HTML tags. All HTML tags are made up of a number of specific parts. They specify the tag name between angle brackets, the content that the tag affects, and various attributes affecting the tag in a name/value pair</p>
+    <h2>HTML Elements</h2>
+    <hr>
+<br><br>
+    <p>An <b>HTML element</b> is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags −</p>
+    <table class="table-bordered">
+<tr>
+<th style="text-align:center;">Start Tag</th>
+<th style="text-align:center;">Content</th>
+<th style="text-align:center;">End Tag</th>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>This is paragraph content.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>This is heading content.</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;div&gt;</td>
+<td>This is division content.</td>
+<td>&lt;/div&gt;</td>
+</tr>
+<tr>
+<td>&lt;br /&gt;</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<b>Note: Empty elements have no end tags 
+</b>
+<p>Some HTML elements do not have a closing tag; they're called empty elements. Sometimes, they are also referred to as singleton or void elements. Empty elements are easy to use because you only have to include one tag in your web page and the browser will know what to do. For example, to add a single line break to your page, use the tag.</p>
+<br><br><p><b>
+Nested HTML Elements</b><br> 
+HTML elements can be nested (this means that 
+elements can contain other elements). 
+All HTML documents consist of nested HTML 
+elements. <br>
+The following example contains four HTML 
+elements (&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt;): 
+<br>
+<b>Example:</b><br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt; My First Heading&lt;/h1&gt;<br>
+&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<br>
+<br>
+<h2>HTML Tag vs. Element</h2>
+<p>An HTML element is defined by a <i>starting tag</i>. If the element contains other content, it ends with a <i>closing tag</i>.</p>
+<p>For example, <b>&lt;p&gt;</b> is starting tag of a paragraph and <b>&lt;/p&gt;</b> is closing tag of the same paragraph but <b>&lt;p&gt;This is paragraph&lt;/p&gt;</b> is a paragraph element.</p>
+
+</div>
+<div id="html-attributes">
+
+    <hr><br>
+    <h2>HTML Attributes</h2>
+    <br>
+    <p>We have seen few HTML tags and their usage like heading tags <b>&lt;h1&gt;, &lt;h2&gt;,</b> paragraph tag <b>&lt;p&gt;</b> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.</p> 
+<p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts &minus; a <b>name</b> and a <b>value</b></p>
+<ul class="list">
+<li><p>The <b>name</b> is the property you want to set. For example, the paragraph <b>&lt;p&gt;</b> element in the example carries an attribute whose name is <b>align</b>, which you can use to indicate the alignment of paragraph on the page.</p></li>
+<li><p>The <b>value</b> is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <b> left, center</b> and <b>right</b>.</p></li>
+</ul>
+<p>Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.</p>
+    <hr>
+    <h2>The href Attribute</h2> 
+The &lt;a&gt; tag defines a hyperlink. The href attribute 
+specifies the URL of the page the link goes to: 
+<br><b>Example:</b><br><br>
+&lt;a href="https://try.com"&gt;visit our school&lt;/a&gt;
+<hr>
+<h4>The src Attribute</h4> <br><p>
+The &lt;img&gt; tag is used to embed an image in an 
+HTML page. The src attribute specifies the path to 
+the image to be displayed: </p><br><br>
+<b>Example:</b><br><br>
+&lt;img src="img_girl.jpg"&gt;
+<br><br><p>There are two ways to specify the URL in 
+the src attribute:<br>
+
+<b>1. Absolute URL</b>- Links to an external image that is 
+hosted on another website.<br> 
+Example: src="https://www.w3schools.com/images/i
+mg_girl.jpg".<br> 
+Notes: External images might be under copyright. If 
+you do not get permission to use it, you may be in 
+violation of copyright laws. In addition, you cannot 
+control external images; it can suddenly be removed 
+or changed.<br>
+<br> 
+<b>2. Relative URL </b>- Links to an image that is hosted 
+within the website. Here, the URL does not include 
+the domain name. If the URL begins without a slash, 
+it will be relative to the current page.<br>
+Example: 
+<br>src="img_girl.jpg".<br> If the URL begins with a slash, it 
+will be relative to the domain.<br> Example: 
+src="/images/img_girl.jpg". <br>
+<b>Tip:</b> It is almost always best to use relative URLs.<br> 
+They will not break if you change domain. <br>
+The width and height Attributes <br>
+The &lt;img&gt; tag should also contain 
+the width and height attributes, which specify the 
+width and height of the image (in pixels): 
+<br><br>Example:
+<br>
+&lt;img src="img_girl.jpg" width="500" height="600"&gt;<hr>
+<h2>The alt Attribute</h2> 
+The required alt attribute for the &lt;img&gt; tag specifies 
+an alternate text for an image, if the image for some 
+reason cannot be displayed. This can be due to a slow 
+connection, or an error in the src attribute, or if the 
+user uses a screen reader. 
+<br>Example:
+&lt;img src="img_girl.jpg" alt="Girl with a jacket">
+&lt;img src="img_typo.jpg" alt="Girl with a jacket"><hr>
+<h2>The style Attribute </h2><br>
+The style attribute is used to add styles to an element, 
+such as color, font, size, and more.<br> 
+Example:
+&lt;p style="color:red;">This is a red paragraph.&lt;/p><hr>
+<h2>The lang Attribute</h2> 
+You should always include the lang attribute inside 
+the &lt;html> tag, to declare the language of the Web 
+page. This is meant to assist search engines and 
+browsers.<br><br> 
+The following example specifies English as the 
+language:<br>
+<code>
+&lt;!DOCTYPE html><br>
+&lt;html lang="en"><br>
+
+&lt;body>
+... 
+
+<br>&lt;/body>
+<br>&lt;/html>
+</code>
+<br>
+Country codes can also be added to the language 
+code in the lang attribute. So, the first two characters 
+define the language of the HTML page, and the last 
+two characters define the country.
+<br> 
+The following example specifies English as the 
+language and United States as the country:
+<br><code> 
+&lt;!DOCTYPE html>
+<br>&lt;html lang="en-US">
+<br>&lt;body>
+... 
+<br>&lt;/body>
+<br>&lt;/html>
+</code>
+</p>
+<hr>
+<h2>Attributes:-</h2>
+<hr>
+<p>Here's a table of some other attributes that are readily usable with many of the HTML tags.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Attribute</th>
+<th style="text-align:center;">Options</th>
+<th style="text-align:center;">Function</th>
+</tr>
+<tr>
+<td>align</td>
+<td>right, left, center</td>
+<td>Horizontally aligns tags</td>
+</tr>
+<tr>
+<td>valign</td>
+<td>top, middle, bottom</td>
+<td>Vertically aligns tags within an HTML element.</td>
+</tr>
+<tr>
+<td>bgcolor</td>
+<td>numeric, hexidecimal, RGB values</td>
+<td>Places a background color behind an element</td>
+</tr>
+<tr>
+<td>background</td>
+<td>URL</td>
+<td>Places a background image behind an element</td>
+</tr>
+<tr>
+<td>id</td>
+<td>User Defined</td>
+<td>Names an element for use with Cascading Style Sheets.</td>
+</tr>
+<tr>
+<td>class</td>
+<td>User Defined</td>
+<td>Classifies an element for use with Cascading Style Sheets.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>Numeric Value</td>
+<td>Specifies the width of tables, images, or table cells.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Numeric Value</td>
+<td>Specifies the height of tables, images, or table cells.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>User Defined</td>
+<td>"Pop-up" title of the elements.</td>
+</tr>
+</table><br>
+<br>
+<!-- <hr>
+    <h2>Difference between HTML tags , element and Attributes</h2>
+<hr> -->
+</div><br><br>
+<!-- HTML Headings -->
+<div id="headings">
+    
+    <hr><br>
+    <h2>HTML Headings:-</h2>
+    <hr><br>
+    <p>Any document starts with a heading. You can use different sizes for your headings. HTML also
+has six levels of headings, which use the elements &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, and
+&lt;h6>. While displaying any heading, browser adds one line before and one line after that
+heading.</p>
+
+<br><b>Example</b>
+<code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>Heading Example&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;h1>This is heading 1<br>&lt;/h1>
+<br>&lt;h2>This is heading 2<br>&lt;/h2>
+<br>&lt;h3>This is heading 3<br>&lt;/h3>
+<br>&lt;h4>This is heading 4<br>&lt;/h4>
+<br>&lt;h5>This is heading 5<br>&lt;/h5>
+<br>&lt;h6>This is heading 6<br>&lt;/h6>
+<br>&lt;/body>
+<br>&lt;/html>
+</code><br>
+<h2>Result:-</h2>
+<img src="headings.png">  
+</div>
+<div id="Tables">
+    <hr><br>
+    <h2>HTML Tables</h2>
+    <hr>
+    <p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into
+rows and columns of cells.<br><br>
+The HTML tables are created using the &lt;table> tag in which the &lt;tr> tag is used to create table
+rows and &lt;td> tag is used to create data cells.
+</p>
+<b>Example</b><br><code>
+&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Tables<br>&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1">
+<br>&lt;tr>
+<br>&lt;td>Row 1, Column 1<br>&lt;/td>
+<br>&lt;td>Row 1, Column 2<br>&lt;/td>
+<br>&lt;/tr>
+<br>&lt;tr>
+<br>&lt;td>Row 2, Column 1<br>&lt;/td>
+<br>&lt;td>Row 2, Column 2<br>&lt;/td>
+<br>&lt;/tr>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html><br><br></code>
+<b>Result:-</b><br><br>
+<img src="table-rows.png"><br>
+<b>note:-</b>
+<p>Here border is an attribute of &lt;table> tag and it is used to put a border across all the cells. If you
+do not need a border then you can use border="0".
+</p><hr>
+<br>
+<h2>Table Heading</h2>
+<br><p>Table heading can be defined using &lt;th> tag. This tag will be put to replace &lt;td> tag, which is
+used to represent actual data cell. Normally you will put your top row as table heading as shown
+below, otherwise you can use &lt;th> element in any row.
+<br>
+<b>Example:-</b><code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Table Header<&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1">
+<br>&lt;tr>
+<br>&lt;th>Name<&lt;/th>
+<br>&lt;th>Salary<&lt;/th>
+<br>&lt;/tr>
+<br>&lt;tr>
+<br>&lt;td>Ramesh Raman<&lt;/td>
+<br>&lt;td>5000<&lt;/td>
+<br>&lt;/tr>
+<br>&lt;tr>
+<br>&lt;td>Shabbir Hussein<&lt;/td>
+<br>&lt;td>7000<&lt;/td>
+<br>&lt;/tr>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html></code>
+<br><b>Result:-</b><br>
+<img src="table-heading.png"><br><hr><hr>
+<h2>Cellpadding and Cellspacing Attributes</h2>
+<p>There are two attribiutes called cellpadding and cellspacing which you will use to adjust the white
+space in your table cells. The cellspacing attribute defines the width of the border, while
+cellpadding represents the distance between cell borders and the content within a cell.</p>
+<br><b>Example:-</b><br><code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Table Cellpadding<&lt;br>&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1" cellpadding="5" cellspacing="5">
+<br>&lt;tr>
+<br>&lt;th>Name<&lt;br>&lt;/th>
+<br>&lt;th>Salary<&lt;br>&lt;/th>
+&lt;br>&lt;<br>&lt;/tr>
+<br>&lt;tr>
+<br>&lt;td>Ramesh Raman<&lt;br>&lt;/td>
+<br>&lt;td>5000<&lt;br>&lt;/td>
+<br>&lt;/tr>
+<br>&lt;tr>
+<br>&lt;td>Shabbir Hussein<&lt;br>&lt;/td>
+<br>&lt;td>7000<&lt;br>&lt;/td>
+<br>&lt;/tr>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html></code>
+<br><b>result:-</b><br>
+<img src="table-heading.png"><br><hr><br>
+<h2>Colspan and Rowspan Attributes</h2><br>
+<p>You will use colspan attribute if you want to merge two or more columns into a single column.<br>
+Similar way you will use rowspan if you want to merge two or more rows.</p>
+<br><b>Example</b><br><code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Table Colspan/Rowspan<br>&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1">
+<br>&lt;tr>
+<br>&lt;th>Column 1&lt;/th>
+<br>&lt;th>Column 2&lt;/th>
+<br>&lt;th>Column 3&lt;br>&lt;/th>
+<br>&lt;/tr>
+<br>&lt;tr><br>&lt;td rowspan="2">Row 1 Cell 1<br>&lt;/td><br>&lt;td>Row 1 Cell 2<br>&lt;/td><br>&lt;td>Row 1 Cell 3<br>&lt;/td><br>&lt;/tr>
+<br>&lt;tr><br>&lt;td>Row 2 Cell 2<br>&lt;/td><br>&lt;td>Row 2 Cell 3</br>&lt;td><br>&lt;/tr>
+<br>&lt;tr><tbr>&lt;d colspan="3">Row 3 Cell 1<br>&lt;/td><br>&lt;/tr>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html></code>
+<br><b>Result</b><br>
+<img src="table-colspan.png"><br><hr><br>
+<h2>Tables Backgrounds
+</h2><br>
+You can set table background using one of the following two ways:<br>
+<b>1.bgcolor attribute</b> - You can set background color for whole table or just for one cell.<br>
+<b>2.background attribute</b> - You can set background image for whole table or just for one cell.<br>
+You can also set border color also using bordercolor attribute.
+<br><b>Example:-</b><br><code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Table Background</title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1" bordercolor="green" bgcolor="yellow">
+<br>&lt;tr>
+<br>&lt;th>Column 1<br>&lt;/th>
+<br>&lt;th>Column 2<br>&lt;/th>
+<br>&lt;th>Column 3<br>&lt;/th>
+<br>&lt;/tr>
+<br>&lt;tr><br>&lt;td rowspan="2">Row 1 Cell 1<br>&lt;/td><br>&lt;td>Row 1 Cell 2<br>&lt;/td><br>&lt;td>Row 1 Cell 3<br>&lt;/td><br>&lt;/tr>
+<br>&lt;tr><br>&lt;td>Row 2 Cell 2<br>&lt;/td><br>&lt;td>Row 2 Cell 3<br>&lt;/td><br>&lt;/tr>
+<br>&lt;tr><br>&lt;td colspan="3">Row 3 Cell 1<br>&lt;/td><br>&lt;/tr>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html></code>
+<br><b>Result</b><br>
+<img src="tables-backgrounds.png"><br><hr><br>
+<h2>Table Header, Body, and Footer</h2><br>
+Tables can be divided into three portions: a header, a body, and a foot. The head and foot are
+rather similar to headers and footers in a word-processed document that remain the same for
+every page, while the body is the main content holder of the table.<br><br>
+The three elements for separating the head, body, and foot of a table are:<br>
+<b>&lt;thead></b> - to create a separate table header.
+ <br><b> &lt;tbody></b> - to indicate the main body of the table.
+ <br><b>&lt;tfoot></b> - to create a separate table footer 
+ <br><b>note:-</b><br>
+    <p>A table may contain several &lt;tbody> elements to indicate different pages or groups of data. But it
+is notable that &lt;thead> and &lt;tfoot> tags should appear before tbody></p>
+<br><b>Example</b><br>
+<code>
+<!DOCTYPE html>
+<br>&lt;html>
+<br>&lt;head>
+<br>&lt;title>HTML Table&lt;/title>
+<br>&lt;/head>
+<br>&lt;body>
+<br>&lt;table border="1" width="100%">
+<br>&lt;thead>
+<br>&lt;tr>
+<br>&lt;td colspan="4">This is the head of the table&lt;/td>
+<br>&lt;/tr>
+<br>br>&lt;&lt;&lt;/thead>
+<br>&lt;tfoot>
+<br>&lt;tr>
+<br>&lt;td colspan="4">This is the foot of the table&lt;/td>
+<br>&lt;/tr>
+<br>&lt;/tfoot>
+<br>&lt;tbody>
+<br>&lt;tr>
+<br>&lt;td>Cell 1&lt;/td>
+<br>&lt;td>Cell 2&lt;/td>
+<br>&lt;td>Cell 3&lt;/td>
+<br>&lt;td>Cell 4&lt;/td>
+<br>&lt;/tr>
+<br>&lt;/tbody>
+<br>&lt;/table>
+<br>&lt;/body>
+<br>&lt;/html></code>
+<br><b>Result</b><br>
+<img class="headoftable" src="tables-body.png" width="500px" height="200px"><br><hr><br>
+
+</div>
+<!-- HTML FORMS -->
+<div id="html-forms">
+    
+    <h2>HTML FORMS</h2>
+    <hr><br>
+    <p>HTML Forms are required when you want to collect some data from the site visitor. For exampleduring user registration you would like to collect information such as name, email address, credit card, etc.<br>A form will take input from the site visitor and then will post it to a back-end application such asCGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.<br>
+There are various form elements available like text fields, textarea fields, drop-down menus, radio
+buttons, checkboxes, etc.</p>
+<br><b>syntax:-</b>
+<p>The HTML &lt;form> tag is used to create an HTML form and it has following syntax:</p><code>
+<br>&lt;form action="Script URL" method="GET|POST">
+<br>form elements like input, textarea etc.
+<br>&lt;/form>
+</code>
+<br><hr>
+<h2>HTML Form Controls</h2>
+<br><p>There are different types of form controls that you can use to collect data using HTML form:</p>
+<ul style="list-style-type: circle;">
+<li>Text Input Controls</li>
+<li>Checkboxes Controls</li>
+<li>Radio Box Controls</li>
+<li>Select Box Control</li>
+<li>Clickable Buttons</li>
+<li>Submit and Reset Button</li><br>  
+</ul>
+<p>There are three types of text input used on forms &minus;</p>
+<ul class="list"><br>
+<li><p><b>Single-line text input controls</b> &minus; This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <b>&lt;input&gt;</b> tag.</p></li><br>
+<li><p><b>Password input controls</b> &minus; This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &lt;input&gt; tag.</p></li><br>
+<li><p><b>Multi-line text input controls</b> &minus; This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <b>&lt;textarea&gt;</b> tag.</p></li>
+</ul>
+
+</div>
+<br><hr><br>
+<div id="html-frames">
+    
+   <br> <hr>
+   <h2>HTML irafmes or frameset</h2>
+
+    <hr>
+    <br>
+    <p>You can define an inline frame with HTML tag &lt;iframe>. The &lt;iframe> tag is not somehow related to &lt;frameset> tag, instead, it can appear anywhere in your document. The &lt;iframe> tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.<br>
+
+The src attribute is used to specify the URL of the document that occupies the inline frame.</p>
+<br><b>Example</b><br>
+<p>Following is the example to show how to use the &lt;iframe> −
+<br><code>
+<br>&lt;!DOCTYPE html>
+<br>&lt;html>
+   <br>&lt;head>
+      <br>&lt;title>HTML Iframes<br>&lt;/title>
+   <br>&lt;/head>   
+   <br>&lt;body>
+      <br>&lt;p>Document content goes here...<br>&lt;/p>  
+      <br>&lt;iframe src = "https://www.gc11.ac.in/" width = "555" height = "200">
+         Sorry your browser does not support inline frames.
+      <br>&lt;/iframe>
+      <br>&lt;p>Document content also go here...<br>&lt;/p>
+   <br>&lt;/body>
+    
+<br>&lt;/html>
+</code>
+<br><b>Result:-</b><br>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Iframes</title>
+   </head>   
+   <body>
+      <p>Document content goes here...</p>  
+      <iframe src = "https://www.gc11.ac.in/" width = "600" height = "600">
+         Sorry your browser does not support inline frames.
+      </iframe>
+      
+   </body><br><hr><br> 
+
+   <h2>The &lt;iframe> tag attributes</h2>
+   <br>
+   <table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>
+<p><b>src</b></p>
+<p>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>
+<p><b>name</b></p>
+<p>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>
+<p><b>marginwidth</b></p>
+<p>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>
+<p><b>marginheight</b></p>
+<p>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>
+<p><b>height</b></p>
+<p>This attribute specifies the height of &lt;iframe&gt;.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>
+<p><b>scrolling</b></p>
+<p>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>
+<p><b>longdesc</b></p>
+<p>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>
+<p><b>width</b></p>
+<p>This attribute specifies the width of &lt;iframe&gt;.</p></td>
+</tr>
+<tr></tr>
+</table> 
+</html>
+</p>
+</div>
+    </section>
+</content>
+</div>
+ 
+</body>
+</html>

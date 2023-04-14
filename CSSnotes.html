@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn CSS</title>
+	<link rel="stylesheet" type="text/css" href="CSSnotestyle.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="main">
+            <div class="logo">
+                <img src="codecrush-logo.png">
+            </div>
+            <div class="items">
+                <ul>
+                <li class="active"><a href="codecrushap.html">Home</a></li>
+                <li><a href="codecrushap.html">E-learning</a></li>
+                <li><a href="#">Video tutorials</a></li>
+                <li><a href="codeEditor.html" >Code-Editor</a></li>
+              
+                </ul>
+            </div>
+        </div>
+        </nav>
+        </header> 
+        <div class="html-head">
+            <div class="html-logo">
+                <img src="css.png">
+            </div>
+            <div class="html-heading">
+                
+            </div>
+        </div>
+<!-- CSS -->
+<content>
+    <!-- <section class="content-block"> -->
+    <!-- 	<div class="sidebar">
+    	        <h2 class="content">Page Index</h2>
+    	        <ul class="pageindex">
+                   <li><a href="#css-intro">Introduction</a></li>
+                    <li><a href="#css-properties" >Properties</a></li>
+                    <li><a href="#css-selector">Selectors</a></li>
+                    
+                    <li><a href="#css-flexbox">Flex-box and Grid</a></li>
+                    <li><a href="#css-boxModel">Box-model</a></li>
+                    <li><a href="#css-mediaQueries">Media Queries</a></li>
+                    <li><a href="#css-animation">Animations & Transition</a></li>
+                    
+                </ul>
+        </div> -->
+    <!-- </section> -->
+    <section class="notes">
+        
+                
+        <div id="css-intro" style="display:flex;">
+            <div class="sidebarContainer">
+                <div class="sidebar">
+                    <h2 class="content">Page Index</h2>
+                    <ul class="pageindex">
+                            <li><a href="#css-intro">Introduction</a></li>
+                            <li><a href="#css-properties" >Properties</a></li>
+                            <li><a href="#css-selector">Selectors</a></li>
+                            
+                            <li><a href="#css-flexbox">Flex-box and Grid</a></li>
+                            <li><a href="#css-boxModel">Box-model</a></li>
+                            <li><a href="#css-mediaQueries">Media Queries</a></li>
+                            
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                
+            <h2>CSS Introduction</h2>
+            <h3>What is CSS?</h3>
+            <ul style="list-style-type: circle;">
+<li>CSS stands for Cascading Style Sheets</li><br>
+<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li><br>
+<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li><br>
+<li>External stylesheets are stored in CSS files</li>
+</ul>
+<h3>Why Use CSS?</h3>
+<p>CSS is used to define styles for your web pages, including the design, layout 
+and variations in display for different devices and screen sizes.</p>
+<h3>CSS Solved a Big Problem</h3>
+<p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+<p>HTML was 
+created to describe the content of a web page, like:</p>
+<p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 
+specification, it started a nightmare for web developers. Development of large 
+websites, where fonts and color information were added to every single  
+page, became a long and expensive process.</p>
+<p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+<p>CSS removed the style formatting from the HTML page!</p>
+<h2>CSS Saves a Lot of Work!</h2>
+<p>The style definitions are normally saved in external .css files.</p>
+<p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+<br><hr><br>
+            </div>
+
+        </div>
+        <div id="css-properties">
+            <h2>CSS Properties</h2>
+            <br>
+
+<p>Control many style properties of an element:</p>
+● Coloring<br>
+
+● Size<br>
+● Position<br>
+● Visibility<br>
+● Many more: (e.g. p: { text-decoration: line-through; })<br>
+● Also used in animation<br>
+        </div>
+        <div id="css-selector" >
+            <h2>CSS Selectors</h2>
+            <p>A CSS Selectors are used to selecting HTML elements based on their element name, id, attributes, etc. It can select one or more elements simultaneously.</p><br>
+            <b>CSS Selector can be divided into 5 categories:</b>
+            <ul></li><br>
+           <li> Simple selectors (select elements based on name, id, class)</li><br>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li><br>
+<li>Pseudo-class selectors (select elements based on a certain state)</li><br>
+<li>Pseudo-elements selectors (select and style a part of an element)</li><br>
+<li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+<h2>CSS Combinators</h2>
+<p>A combinator is something that explains the relationship between the selectors.</p><br>
+<p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.<br>
+There are four different combinators in CSS:<br></p>
+<ul>
+    <li>descendant selector (space)</li><br>
+    <li>child selector (>)</li><br>
+    <li>adjacent sibling selector (+)</li><br>
+    <li>general sibling selector (~)</li><br>
+</ul>
+<h4>Descendant Selector</h4>
+<p>The descendant selector matches all elements that are descendants of a specified element.<br><br>
+
+The following example selects all &lt;p> elements inside &lt;div> elements:
+<br> <br><code>
+div p {<br>
+  background-color: yellow;<br>
+}<br><br></code>
+<button><a href="CEdescendantSelector.html">Execute!</a></button>
+<h4>Child Selector(>)</h4><br>
+<p>
+    The child selector selects all elements that are the children of a specified element.
+
+The following example selects all <p> elements that are children of a <div> element:
+    <br><br><code>
+    div > p {<br>
+  background-color: yellow;<br>
+}</code><br><br>
+<button><a href="CEchildSelector.html">Execute!</a></button>
+</p><br>
+<h4>Adjacent Sibling Selector(+)</h4><br><p>
+ The adjacent sibling selector is used to select an element that is directly after another specific element.<br>
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".<br>
+
+The following example selects the first <p> element that are placed immediately after &lt;div> elements:  <br><br> <code>
+    div + p {<br>
+  background-color: yellow;<br>
+}</code><br><br>
+<button><a href="CEadjacentsiblingselect.html">Execute!</a></button>
+</p><br>
+<h4>General Sibling Selector(~)</h4><br><p>
+    The general sibling selector selects all elements that are next siblings of a specified element.<br>
+
+The following example selects all &lt;p> elements that are next siblings of &lt;div> elements: <br>
+<br><code>
+div ~ p {<br>
+  background-color: yellow;
+}</code>
+<br><br><button><a href="CEgeneralsigblingselct.html">Execute!</a></button>
+<br>
+</p><br>
+<h2>All CSS Combinator Selectors</h2>
+<table class="ws-table-all notranslate">
+  <tr>
+    <th style="width:25%">Selector</th>
+    <th style="width:15%">Example</th>
+    <th>Example description</th>
+  </tr>
+  <tr>
+    <td><i>element element</i></td>
+    <td >div p</td>
+    <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+  </tr>
+  <tr>
+    <td><i>element&gt;element</i></td>
+    <td>div &gt; p</td>
+    <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+  </tr>
+  <tr>
+    <td><i>element+element</i></td>
+    <td class="notranslate">div + p</td>
+    <td>Selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements</td>
+  </tr>
+  <tr>
+    <td><i>element1~element2</i></td>
+    <td> p ~ ul</td>
+    <td>Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element</td>
+  </tr>
+</table>
+</p>
+        </div><br><hr><br>
+        <div id="css-flexbox" >
+             <h2>CSS Flexbox</h2>
+             <p>CSS3 Flexible boxes also known as CSS Flexbox, is a new layout mode in CSS3.
+
+<br><br>
+The CSS3 flexbox is used to make the elements behave predictably when they are used with different screen sizes and different display devices. It provides a more efficient way to layout, align and distribute space among items in the container.
+<br><br>
+It is mainly used to make CSS3 capable to change its item?s width and height to best fit for all available spaces. It is preferred over block model.
+<br><br>
+The CSS3 flexbox contains flex containers and flex items.
+<br>
+<b>1.Flex container:</b>The flex container specifies the properties of the parent. It is declared by setting the display property of an element to either flex or inline-flex.
+<br>
+<b>2.Flex items:</b>The flex items specify properties of the children. There may be one or more flex items inside a flex container.<br>
+<img src="CEgeneralsigblingselct_files\css-flexbox1.png">
+<br><br>
+<b>Note:</b>Flexbox specifies how flex items are set inside a flex container. It sets the flex items inside a flex container along a flex line. By default, there is only one flex line per flex container. Everything outside a flex container and inside a flex item is considered as usual.<br>
+<hr>
+<b>Example</b>
+<code>
+<br>&lt;!DOCTYPE html>  
+<br>&lt;html>  
+<br>&lt;head>&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252">  
+<br>&lt;style>  
+.flex-container {  
+    display: -webkit-flex;  
+    display: flex;  
+    width: 400px;  
+    height: 200px;  
+    background-color: lightpink;  
+}  
+.flex-item {  
+    background-color: brown;  
+    width: 100px;  
+    height: 100px;  
+    margin: 10px;  
+}  
+<br>&lt;/style>  
+<br>&lt;/head>  
+<br>&lt;body>  
+<br>&lt;div class="flex-container">  
+  <br>&lt;div class="flex-item">flex item 1</div>  
+  <br>&lt;div class="flex-item">flex item 2</div>  
+  <br>&lt;div class="flex-item">flex item 3</div>  
+<br>&lt;/div>  
+<br>&lt;/body>  
+<br>&lt;/html>
+<br></code> <br>
+<button><a href="C.html">RESULT!</a></button>
+<hr>
+<h4>Example 2:-</h4>
+<code>
+<br>&lt;!DOCTYPE html>  
+<br>&lt;html>  
+<br>&lt;head>  
+<br>&lt;style>  
+body {  
+    direction: rtl;  
+}  
+.flex-container {  
+    display: -webkit-flex;  
+    display: flex;  
+    width: 400px;  
+    height: 200px;  
+    background-color: lightpink;  
+}  
+.flex-item {  
+    background-color: brown;  
+    width: 100px;  
+    height: 100px;  
+    margin: 10px;  
+}  
+<br>&lt;/style>  
+<br>&lt;/head>  
+<br>&lt;body>  
+<br>&lt;div class="flex-container">  
+  <br>&lt;div class="flex-item">flex item 1</div>  
+  <br>&lt;div class="flex-item">flex item 2</div>  
+  <br>&lt;div class="flex-item">flex item 3</div>  
+<br>&lt;/div>  
+<br>&lt;/body>  
+<br>&lt;/html> <br></code><br>
+<button><a href="CEcssflex.html">Result!</a></button>
+<hr>
+<h2 class="h2">CSS3 Flexbox Properties</h2><br><br>
+<p>Following is a list of CSS3 Flexbox properties:</p><br>
+<table class="alt">
+<tr>
+<th>property</th>
+<th>description</th>
+</tr>
+<tr>
+<td>display</td>
+<td>it is used to specify the type of box used for an html element.</td>
+</tr>
+<tr>
+<td>flex-direction</td>
+<td>it is used to specify the direction of the flexible items inside a flex container.</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>it is used to align the flex items horizontally when the items do not use all available space on the main-axis.</td>
+</tr>
+<tr>
+<td>align-items</td>
+<td>it is used to align the flex items vertically when the items do not use all available space on the cross-axis.</td>
+</tr>
+<tr>
+<td>flex-wrap</td>
+<td>it specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>it is used to modify the behavior of the flex-wrap property. it is similar to align-items, but instead of aligning flex items, it aligns flex lines.</td>
+</tr>
+<tr>
+<td>flex-flow</td>
+<td>it specifies a shorthand property for flex-direction and flex-wrap.</td>
+</tr>
+<tr>
+<td>order</td>
+<td>it specifies the order of a flexible item relative to the rest of the flex items inside the same container.</td>
+</tr>
+<tr>
+<td>align-self</td>
+<td>it is used on flex items. it overrides the container's align-items property.</td>
+</tr>
+<tr>
+<td>flex</td>
+<td>it specifies the length of a flex item, relative to the rest of the flex items inside the same container.</td>
+</tr>
+</table>
+
+</p>
+</div><br><hr><br>
+<div id="css-boxModel" >
+    <h2>CSS Box Model</h2>
+    <br><br>
+    <p>The components that can be depicted on the web page consist of one or more than one rectangular box.
+<br><br>
+A CSS box model is a compartment that includes numerous assets, such as edge, border, padding and material. It is used to develop the design and structure of a web page. It can be used as a set of tools to personalize the layout of different components. According to the CSS box model, the web browser supplies each element as a square prism.<br>
+<br>
+The following diagram illustrates how the CSS properties of width, height, padding, border and margin dictate that how much space an attribute will occupy on a web page.<br>
+<br><img class="boxmodel" src="box_model.png"><br>
+<br>
+The CSS box model contains the different properties in CSS. These are listed below.
+<br><br>
+<ul>
+<li>Border</li>
+<li>Margin</li>
+<li>Padding</li>
+<li>Content</li>
+</ul><br>
+Now, we are going to determine the properties one by one in detail.<br>
+<b>1. Border Field</b>
+<br>
+   It is a region between the padding-box and the margin. Its proportions are determined by the width and height of the boundary.
+<br>
+<b>2.Margin Field</b>
+<br>
+This segment consists of the area between the boundary and the edge of the border.
+<br>
+The proportion of the margin region is equal to the margin-box width and height. It is better to separate the product from its neighbor nodes.
+<br><b>3.Padding Field</b>
+<br>
+This field requires the padding of the component. In essence, this area is the space around the subject area and inside the border-box. The height and the width of the padding box decide its proportions.
+<br>
+<b>4.Content Field</b>
+<br>
+Material such as text, photographs, or other digital media is included in this area.
+<br>
+It is constrained by the information edge, and its proportions are dictated by the width and height of the content enclosure.<br>
+<hr><b>Example 1:-</b>
+<code>
+<br>&lt;!DOCTYPE html>   
+<br>&lt;head>   
+<br>&lt;style>   
+        .main  
+      {   
+            font-size:30px;<br>   
+            font-weight:bold;  <br> 
+            text-align:left;   
+        }   <br>
+#box   
+     {   
+            padding-top:30px;   <br>
+            width: 300px; <br>  
+            height: 100px;  <br> 
+            border: 40px solid red;<br>   
+            margin: 30px;<br>   
+            text-align:center; <br>  
+            font-size:32px;<br>   
+            font-weight:bold;   
+        }   
+<br>&lt;/style>   
+<br>&lt;/head>         
+<br>&lt;body>   
+        <br>&lt;div class="main">CSS Box-Model Property&lt;/div>
+        <br>&lt;div id="box">codecrushbr>&lt;&lt;/div>   
+<br>&lt;/body>   
+<br>&lt;/html> 
+<br><br></code>
+<button><a href="CEcssboxmodel.html">Result!</a></button>
+</p>
+</div><br><hr><br>
+<div id="css-mediaQueries" >
+        <h2>CSS Media  Queries</h2><br>
+
+        <p>Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:<br>
+<ul>
+
+<br><li>To conditionally apply styles with the CSS @media and @import at-rules.</li>
+<br><li>To target specific media for the &lt;style>, &lt;link>, &lt;source>, and other HTML elements with the media= attribute.</li>
+
+        </div><br><hr><br>
+        
+    </section>
+</content>
+</body>
+</html>

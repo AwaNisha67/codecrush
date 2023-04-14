@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn JS</title>
+	<link rel="stylesheet" type="text/css" href="Jsnotestyle.css">
+</head>
+<body>
+    <header>
+    <nav>
+    <div class="main">
+        <div class="logo">
+            <img src="codecrush-logo.png">
+        </div>
+            <div class="items">
+                <ul>
+                <li class="active"><a href="codecrushap.html">Home</a></li>
+                <li><a href="codecrushap.html">E-learning</a></li>
+                <li><a href="#">Video tutorials</a></li>
+                <li><a href="codeEditor.html" >Code-Editor</a></li>
+                
+                </ul>
+            </div>
+    </div>
+    </nav>
+    </header> 
+        <div class="html-head">
+            <div class="html-logo">
+                <img src="js.png">
+            </div>
+        <div class="html-heading">
+                
+        </div>
+        </div>
+    <section class="content-block">
+    	<div class="sidebar">
+    	        <h2 class="content">Page Index</h2>
+    	        <ul class="pageindex">
+                   <li><a href="#js-intro">Introduction</a></li>
+                    <li><a href="#js-syntax" >Syntax</a></li>
+                    <li><a href="#js-variables">Variables</a></li>
+                   
+                    <li><a href="#js-functions">Functions</a></li>
+                    <li><a href="#js-cookies">Cookies</a></li>
+                    
+                </ul>
+        </div>
+        <section class="notes">
+            <div id="js-intro">
+                <p>JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open and cross-platform.</p>
+                <b>Hello world program</b>
+                <code>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;   <br>
+                    &lt;script language = "javascript" type = "text/javascript"&gt;
+                    <br>&lt;
+                       <br>    document.write("Hello World!")
+                    <br>    &gt;
+                    <br>&lt;/script&gt;      
+                   <br> &lt;/body&gt;
+                   <br> &lt;/html&gt;</code>
+                   <br><button><a href="js1st.html">Result!</a></button>
+                <h2>Applications of Javascript Programming</h2>
+                    <p>As mentioned before, <b>Javascript</b> is one of the most widely used <b>programming languages</b> (Front-end as well as Back-end). It has it's presence in almost every area of software development. I'm going to list few of them here:</p>
+                        <ul class="list">
+                    <li><p><b>Client side validation</b> - This is really important to verify any user input before submitting it to the server and Javascript plays an important role in validting those inputs at front-end itself.</p></li>
+                    <li><p><b>Manipulating HTML Pages</b> - Javascript helps in manipulating HTML page on the fly. This helps in adding and deleting any HTML tag very easily using javascript and modify your HTML to change its look and feel based on different devices and requirements.</p></li>
+                    <li><p><b>User Notifications</b> - You can use Javascript to raise dynamic pop-ups on the webpages to give different types of notifications to your website visitors.</p></li>
+                    <li><p><b>Back-end Data Loading</b> - Javascript provides Ajax library which helps in loading back-end data while you are doing some other processing. This really gives an amazing experience to your website visitors.</p></li>
+                    <li><p><b>Presentations</b> - JavaScript also provides the facility of creating presentations which gives website look and feel. JavaScript provides RevealJS and BespokeJS libraries to build a web-based slide presentations.</p></li>
+                    <li><p><b>Server Applications</b> - Node JS is built on Chrome's Javascript runtime for building fast and scalable network applications. This is an event based library which helps in developing very sophisticated server applications including Web Servers.</p></li>
+                    </ul>
+                    <h2>Case Sensitivity</h2>
+<p>JavaScript is a case-sensitive language. This means that the language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</p>
+<p>So the identifiers <b>Time</b> and <b>TIME</b> will convey different meanings in JavaScript.</p>
+<p><b>NOTE</b> &minus; Care should be taken while writing variable and function names in JavaScript.</p>
+<h2>Comments in JavaScript</h2>
+<p>JavaScript supports both C-style and C++-style comments, Thus &minus;</p>
+<ul class="list">
+<li><p>Any text between a // and the end of a line is treated as a comment and is ignored by JavaScript.</p></li>
+<li><p>Any text between the characters /* and */ is treated as a comment. This may span multiple lines.</p></li>
+<li><p>JavaScript also recognizes the HTML comment opening sequence &lt;!--. JavaScript treats this as a single-line comment, just as it does the // comment.</p></li>
+<li><p>The HTML comment closing sequence --&gt; is  not recognized by JavaScript so it should be written as //--&gt;.</p></li>
+</ul>
+<h3>Example</h3>
+<p>The following example shows how to use comments in JavaScript.</p>
+<pre class="prettyprint notranslate">
+&lt;script language = "javascript" type = "text/javascript"&gt;
+   &lt;!--
+      //This is a comment. It is similar to comments in C++
+   
+      /*
+      * This is a multi-line comment in JavaScript
+      * It is very similar to comments in C Programming
+      */
+   //--&gt;
+&lt;/script&gt;
+</pre>
+            </div>
+            <div id="js-syntax">
+                <h2>JavaScript - syntax</h2><br>
+                <p>JavaScript can be implemented using JavaScript statements that are placed within the <b>&lt;script&gt;... &lt;/script&gt;</b> HTML tags in a web page.</p><br>
+                <p>You can place the <b>&lt;script&gt;</b> tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the <b>&lt;head&gt;</b> tags.</p><br>
+                <p>The &lt;script&gt; tag alerts the browser program to start interpreting all the text between these tags as a script. A simple syntax of your JavaScript will appear as follows.</p>
+                <code>&lt;script ...&gt;
+                JavaScript code
+                    &lt;/script&gt;</code>
+                    <p>The script tag takes two important attributes</p>
+                    <ul>
+                    <li><p><b>Language</b> &minus; This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.</p></li>
+                    <li><p><b>Type</b> &minus; This attribute is what is now recommended to indicate the scripting language in use and its value should be set to "text/javascript".</p></li>
+</ul>
+                    <p>So your JavaScript segment will look like &minus;</p>
+                    <pre class="result notranslate">
+                    &lt;script language = "javascript" type = "text/javascript"&gt;
+   JavaScript code
+                    &lt;/script&gt;
+                    </pre>
+            </div>
+            <div id="js-variables">
+                <h2>JavaScript Datatypes</h2>
+            <p>One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language.</p>
+            <p>JavaScript allows you to work with three primitive data types &minus;</p>
+<&lt;ul class="list">
+<&lt;li><p><b>Numbers,</b> eg. 123, 120.50 etc.</p></li>
+<&lt;li><p><b>Strings</b> of text  e.g. "This text string" etc.</p><&lt;li>
+<&lt;li><p><b>Boolean</b> e.g. true or false.</p></li>
+<&lt;ul>
+<p>JavaScript also defines two trivial data types, <b>null</b> and <b>undefined,</b> each of which defines only a single value. In addition to these primitive data types, JavaScript supports a composite data type known as <b>object</b>. We will cover objects in detail in a separate chapter.</p>
+<p><b>Note</b> &minus; JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.</p>
+<h2>JavaScript Variables</h2>
+<p>Like many other programming languages, JavaScript has variables. Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.</p>
+<p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the <b>var</b> keyword as follows.</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;
+      var money;
+      var name;
+   &gt;
+&lt;/script&gt;
+</pre>
+<p>You can also declare multiple variables with the same <b>var</b> keyword as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;
+      var money, name;
+   &gt;
+&lt;/script&gt;
+</pre>
+<p>Storing a value in a variable is called <b>variable initialization</b>. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.</p>
+<p>For instance, you might create a variable named <b>money</b> and assign the value 2000.50 to it later. For another variable, you can assign a value at the time of initialization as follows.</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;
+      var name = "Ali";
+      var money;
+      money = 2000.50;
+   &gt;
+&lt;/script&gt;
+</pre>
+<p><b>Note</b> &minus; Use the <b>var</b> keyword only for declaration or initialization, once for the life of any variable name in a document. You should not re-declare same variable twice.</p>
+<p>JavaScript is <b>untyped</b> language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.</p>
+<h2>JavaScript Variable Scope</h2>
+<p>The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.</p>
+<ul class="list">
+<li><p><b>Global Variables</b> &minus; A global variable has global scope which means it can be defined anywhere in your JavaScript code.</p></li>
+<li><p><b>Local Variables</b> &minus; A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.</p></li>
+</ul>
+<p>Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.</p>
+
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;body onload = checkscope();&gt;   
+      &lt;script type = "text/javascript"&gt;
+         &lt;
+            var myVar = "global";      // Declare a global variable
+            function checkscope( ) {
+               var myVar = "local";    // Declare a local variable
+               document.write(myVar);
+            }
+         &gt;
+      &lt;/script&gt;     
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            <p>This produces the following result &minus;</p>
+<pre class="result notranslate">
+local
+</pre>
+<h2>JavaScript Variable Names</h2>
+<p>While naming your variables in JavaScript, keep the following rules in mind.</p>
+<ul class="list">
+<li><p>You should not use any of the JavaScript reserved keywords as a variable name. These keywords are mentioned in the next section. For example, <b>break</b> or <b>boolean</b> variable names are not valid.</p></li>
+<li><p>JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or an underscore character. For example, <b>123test</b> is an invalid variable name but <b>_123test</b> is a valid one.</p></li>
+<li><p>JavaScript variable names are case-sensitive. For example, <b>Name</b> and <b>name</b> are two different variables.</p></li>
+</ul>
+<h2>JavaScript Reserved Words</h2>
+<p>A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
+<table class="table table-bordered" style="text-align:center; border: 1px solid; ">
+<tr>
+<td>abstract</td>
+<td>else</td>
+<td>instanceof</td>
+<td>switch</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>enum</td>
+<td>int</td>
+<td>synchronized</td>
+</tr>
+<tr>
+<td>break</td>
+<td>export</td>
+<td>interface</td>
+<td>this</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>extends</td>
+<td>long</td>
+<td>throw</td>
+</tr>
+<tr>
+<td>case</td>
+<td>false</td>
+<td>native</td>
+<td>throws</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>final</td>
+<td>new</td>
+<td>transient</td>
+</tr>
+<tr>
+<td>char</td>
+<td>finally</td>
+<td>null</td>
+<td>true</td>
+</tr>
+<tr>
+<td>class</td>
+<td>float</td>
+<td>package</td>
+<td>try</td>
+</tr>
+<tr>
+<td>const</td>
+<td>for</td>
+<td>private</td>
+<td>typeof</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>function</td>
+<td>protected</td>
+<td>var</td>
+</tr>
+<tr>
+<td>debugger</td>
+<td>goto</td>
+<td>public</td>
+<td>void</td>
+</tr>
+<tr>
+<td>default</td>
+<td>if</td>
+<td>return</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>implements</td>
+<td>short</td>
+<td>while</td>
+</tr>
+<tr>
+<td>do</td>
+<td>import</td>
+<td>static</td>
+<td>with</td>
+</tr>
+<tr>
+<td>double</td>
+<td>in</td>
+<td>super</td>
+<td></td>
+</tr>
+</table>
+
+            </div>
+<br>           
+<hr>
+            <div id="js-functions">
+                <h2>JavaScript:-Functions</h2><br>
+                <p>A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.</p>
+<p>Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like <b>alert()</b> and <b>write()</b> in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once.</p>
+<p>JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript.</p>
+<h2>Function Definition</h2>
+<p>Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the <b>function</b> keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p>
+<h3>Syntax</h3>
+<pre >
+&lt;script type = "text/javascript"&gt;
+   &lt;
+      function functionname(parameter-list) {
+         statements
+      }
+   &gt;
+&lt;/script&gt;
+</pre>
+            </div><hr>
+             <div id="js-cookies">
+                 
+                 <h2>What are Cookies ?</h2>
+<p>Web Browsers and Servers use HTTP protocol to communicate and HTTP is a stateless protocol. But for a commercial website, it is required to maintain session information among different pages. For example, one user registration ends after completing many pages. But how to maintain users' session information across all the web pages.</p>
+<p>In many situations, using cookies is the most efficient method of remembering and tracking preferences, purchases, commissions, and other information required for better visitor experience or site statistics.</p>
+<h2>How It Works ?</h2>
+<p>Your server sends some data to the visitor's browser in the form of a cookie. The browser may accept the cookie. If it does, it is stored as a plain text record on the visitor's hard drive. Now, when the visitor arrives at another page on your site, the browser sends the same cookie to the server for retrieval. Once retrieved, your server knows/remembers what was stored earlier.</p>
+<p>Cookies are a plain text data record of 5 variable-length fields &minus;</p>
+<ul class="list">
+<li><p><b>Expires</b> &minus; The date the cookie will expire. If this is blank, the cookie will expire when the visitor quits the browser.</p></li>
+<li><p><b>Domain</b> &minus; The domain name of your site.</p></li>
+<li><p><b>Path</b> &minus; The path to the directory or web page that set the cookie. This may be blank if you want to retrieve the cookie from any directory or page.</p></li>
+<li><p><b>Secure</b> &minus; If this field contains the word "secure", then the cookie may only be retrieved with a secure server. If this field is blank, no such restriction exists.</p></li>
+<li><p><b>Name=Value</b> &minus; Cookies are set and retrieved in the form of key-value pairs</p></li>
+</ul>
+<p>Cookies were originally designed for CGI programming. The data contained in a cookie is automatically transmitted between the web browser and the web server, so CGI scripts on the server can read and write cookie values that are stored on the client.</p>
+<p>JavaScript can also manipulate cookies using the <b>cookie</b> property of the <b>Document</b> object. JavaScript can read, create, modify, and delete the cookies that apply to the current web page.</p>
+<h2>Storing Cookies</h2>
+<p>The simplest way to create a cookie is to assign a string value to the document.cookie object, which looks like this.</p>
+<pre class="result notranslate">
+document.cookie = "key1 = value1;key2 = value2;expires = date";
+</pre>
+<p>Here the <b>expires</b> attribute is optional. If you provide this attribute with a valid date or time, then the cookie will expire on a given date or time and thereafter, the cookies' value will not be accessible.</p>
+<p><b>Note</b> &minus; Cookie values may not include semicolons, commas, or whitespace. For this reason, you may want to use the JavaScript <b>escape()</b> function to encode the value before storing it in the cookie. If you do this, you will also have to use the corresponding <b>unescape()</b> function when you read the cookie value.</p>
+
+             </div>
+
+
+        </section>
+    </section>
+</body>
+</html>
